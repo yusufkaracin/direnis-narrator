@@ -399,12 +399,6 @@ function toggleGame() {
   if (!isGameRunning) {
     // Oyunu başlat
     const selectedCardIds = Array.from(selectedCards);
-
-    if (selectedCardIds.length === 0) {
-      alert('Lütfen en az bir kart seçin!');
-      return;
-    }
-
     const pauseDuration = getPauseDuration();
 
     console.log('Oyun başlatılıyor...');
